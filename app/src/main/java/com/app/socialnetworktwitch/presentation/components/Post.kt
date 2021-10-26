@@ -51,9 +51,11 @@ fun Post(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .offset(y = if (showProfileImage) {
-                    ProfilePictureSizeMedium / 2f
-                } else 0.dp)
+                .offset(
+                    y = if (showProfileImage) {
+                        ProfilePictureSizeMedium / 2f
+                    } else 0.dp
+                )
                 .clip(MaterialTheme.shapes.medium)
                 .shadow(5.dp)
                 .background(MediumGray)
@@ -62,7 +64,7 @@ fun Post(
                 }
         ) {
             Image(
-                painterResource(id = R.drawable.kermit),
+                painterResource(id = R.drawable.kermit1),
                 contentDescription = "Post image"
             )
             Column(
