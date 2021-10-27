@@ -10,8 +10,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.app.socialnetworktwitch.domain.models.Post
 
-//import com.app.socialnetworktwitch.presentation.PersonListScreen
-//import com.app.socialnetworktwitch.presentation.edit_profile.EditProfileScreen
+import com.app.socialnetworktwitch.presentation.PersonListScreen
+import com.app.socialnetworktwitch.presentation.edit_profile.EditProfileScreen
 import com.app.socialnetworktwitch.presentation.activity.ActivityScreen
 import com.app.socialnetworktwitch.presentation.chat.ChatScreen
 import com.app.socialnetworktwitch.presentation.create_post.CreatePostScreen
@@ -20,7 +20,7 @@ import com.app.socialnetworktwitch.presentation.login.LoginScreen
 import com.app.socialnetworktwitch.presentation.post_detail.PostDetailScreen
 import com.app.socialnetworktwitch.presentation.profile.ProfileScreen
 import com.app.socialnetworktwitch.presentation.register.RegisterScreen
-//import com.app.socialnetworktwitch.presentation.search.SearchScreen
+import com.app.socialnetworktwitch.presentation.search.SearchScreen
 import com.app.socialnetworktwitch.presentation.splash.SplashScreen
 
 @ExperimentalMaterialApi
@@ -52,15 +52,15 @@ fun Navigation(navController: NavHostController) {
         composable(Screen.ProfileScreen.route) {
             ProfileScreen(navController = navController)
         }
-//        composable(Screen.EditProfileScreen.route) {
-//            EditProfileScreen(navController = navController)
-//        }
+        composable(Screen.EditProfileScreen.route) {
+            EditProfileScreen(navController = navController)
+        }
         composable(Screen.CreatePostScreen.route) {
             CreatePostScreen(navController = navController)
         }
-//        composable(Screen.SearchScreen.route) {
-//            SearchScreen(navController = navController)
-//        }
+        composable(Screen.SearchScreen.route) {
+            SearchScreen(navController = navController)
+        }
         composable(Screen.PostDetailScreen.route) {
             PostDetailScreen(
                 navController = navController,
@@ -78,8 +78,8 @@ fun Navigation(navController: NavHostController) {
                 )
             )
         }
-//        composable(Screen.PersonListScreen.route) {
-//            PersonListScreen(navController = navController)
-//        }
+        composable(Screen.PersonListScreen.route) {
+            PersonListScreen(navController = navController)
+        }
     }
 }

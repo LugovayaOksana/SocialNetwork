@@ -110,7 +110,8 @@ fun ProfileScreen(
                         followerCount = 234,
                         followingCount = 534,
                         postCount = 65
-                    )
+                    ),
+                    onEditClick = {navController.navigate(Screen.EditProfileScreen.route)}
                 )
             }
             items(20) {
@@ -120,7 +121,7 @@ fun ProfileScreen(
                 )
                 Post(
                     post = Post(
-                        username = "Philipp Lackner",
+                        username = "Pokemon",
                         imageUrl = "",
                         profilePictureUrl = "",
                         description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed\n" +
