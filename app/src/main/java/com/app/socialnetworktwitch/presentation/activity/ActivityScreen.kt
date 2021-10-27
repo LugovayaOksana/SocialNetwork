@@ -45,7 +45,7 @@ fun ActivityScreen(
                 .fillMaxSize(),
             contentPadding = PaddingValues(SpaceMedium)
         ) {
-            items(20) {
+            items(10) {
                 ActivityItem(
                     activity = Activity(
                         "Pokemon",
